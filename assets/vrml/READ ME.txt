@@ -1,0 +1,23 @@
+## README: VRML Code Accessibility Issue
+
+### Problem:
+
+Dear Professor,
+
+I'd like to inform and apologize about an issue regarding the VRML code I submitted. The VRML code I've worked on seems to be unavailable or inaccessible.
+
+### Reason:
+
+There are a few potential reasons for this:
+
+1. **File Compatibility:** The version of the VRML viewer or software you are using may not be compatible with the version I used to create the file. There are instances where certain newer features or attributes are not recognized by older versions of the software.
+
+2. **Corruption During Transfer:** Sometimes, files can get corrupted during the upload or download process. This can be due to network errors, platform incompatibilities, or other unforeseen issues.
+
+3. **Exporting Process:** During the process of exporting from 3ds Max (or the software I used) to VRML, there might have been certain settings or options that were not correctly configured, leading to an incomplete or erroneous file.
+
+4. **File Path Issues:** The VRML might reference external assets (like textures or other models) using absolute paths on my local machine. If these paths aren't found on another machine, it could cause the VRML to not display correctly.
+
+
+Best regards,
+Igusti Agung Vadayogi Raharja

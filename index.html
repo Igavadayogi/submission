@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- X3dom -->
+    <link rel='stylesheet' type='text/css' href='css/x3dom.css'>
+    <!-- Include the x3dom JavaScript -->
+    <script type='text/javascript' src='js/x3dom.js'></script>
+    <!-- other meta tags, title, css links -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="gallery_generator.js"></script>
+
+    <title>Web3d project!</title>
+  </head>
+  <body>
+<!------ nav bar start -->
+    <nav class="navbar navbar-expand-sm navbar_coca_cola">
+        <!-- Brand -->
+        <div class="logo">
+            <a class="navbar-brand" href="#">
+                <h1>Coca</h1>
+                <h2>Cola</h2>
+                <h3>Journey</h3>
+                <p>Refreshing the world, one story at a time</p>
+            </a>
+        </div>
+        <!--- collapsible menu icon-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--- link menu item button-->
+        <div class="collapse navbar-collapse">
+            <!---links-->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Models</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="toggle()">Contact</a>
+                </li>
+            </ul>
+                       
+        </div>
+      </nav>
+      <br>
+<!---- nav bar end -->
+
+<!-- main content start-->
+    <div class="container-fluid main_content">
+        <div class="row">
+            <!-- collum to hold the x3d model-->
+            <div class="col-sm-10">
+                <div class="card text-left">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="coke.html">Coke</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="sprite.html">Sprite</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="papper.html">dr.Pepper</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                  View
+                                </a>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#">Front</a>
+                                  <a class="dropdown-item" href="#">Back</a>
+                                  <a class="dropdown-item" href="#">Side</a>
+                                  <a class="dropdown-item" href="#">bottom</a>
+                                  <a class="dropdown-item" href="#">top</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div class="model3D">
+                            <x3d>
+                                <scene>
+                                    <inline url="assignment/assets/x3d/source/drPepper.x3d"></inline>
+                                </scene>
+                            </x3d>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                      <h4 class="card-title">Coca Cola X3D Model</h4>
+                        <p class="card-text">this x3d model of "coke can" has been created in 3ds max exported to vrml97 and converted using instantrealty code</p>
+                    </div>
+                </div>
+            </div>
+            
+<!--- column to hold 3d image gallery-->
+<div class="col-sm-2">
+    <div class="card text-left">
+        <div class="card-body" id="gallery">
+            3D image gallery
+        </div>
+        <div class="row">
+          <a href="coke.html">
+            <img id="gallery_coke" src="assets/images/gallery/cola 3ds.jpg" alt="Coca Cola" style="width: 100px; height: 100px;">
+        </a>
+        <a href="sprite.html">
+            <img id="gallery_sprite" src="assets/images/gallery/dr.Pepper.jpg" alt="Sprite" style="width: 100px; height: 100px;">
+        </a>
+        </div>
+        <br>
+        <div class="row">
+          <a href="drpepper.html">
+            <img id="gallery_pepper" src="assets/images/gallery/sprite.jpg" alt="Dr Pepper" style="width: 100px; height: 100px;">
+        </a>
+        <a href="drpepper.html">
+          <img id="gallery_pepper" src="assets/images/gallery/cola2.jpg" alt="Dr Pepper" style="width: 100px; height: 100px;">
+      </a>
+        </div>
+        <br>
+        <div class="row">
+          <a href="drpepper.html">
+            <img id="gallery_pepper" src="assets/images/gallery/DrPepper2.jpg" alt="Dr Pepper" style="width: 100px; height: 100px;">
+        </a>
+        <a href="drpepper.html">
+          <img id="gallery_pepper" src="assets/images/gallery/sprite2.jpg" alt="Dr Pepper" style="width: 100px; height: 100px;">
+      </a>
+        </div>
+        <br>
+        <p class="card-text">3d images rendered by 3ds max</p>
+    </div>
+</div>
+
+<!-- Start the interaction panels -->
+<div id="interaction" class="row" >
+    <!-- Column for the camera view controls -->
+    <div class="col-sm-4">
+        <div class="card text-left">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs">
+              <!-- Dropdown nav-tab -->
+              <li class="nav-item dropdown">
+                  <a class="nav-link active dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Cameras</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#" onclick="cameraFront();">Front</a>
+                    <a class="dropdown-item" href="#" onclick="cameraBack();">Back</a>
+                    <a class="dropdown-item" href="#" onclick="cameraLeft();">Left</a>
+                    <a class="dropdown-item" href="#" onclick="cameraRight();">Right</a>
+                    <a class="dropdown-item" href="#" onclick="cameraTop();">Top</a>
+                    <a class="dropdown-item" href="#" onclick="cameraBottom();">Bottom</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <div class="card-Title x3dCamera_Subtitle drinksText">
+                <h3>Camera Views</h3>
+              </div>                            
+              <a href="#" class="btn btn-success btn-responsive" onclick="cameraFront();">Default</a>
+              <a href="#" class="btn btn-primary btn-responsive" onclick="cameraBack();">Back</a>
+              <a href="#" class="btn btn-secondary btn-responsive" onclick="cameraLeft();">Left</a>
+              <a href="#" class="btn btn-secondary btn-responsive" onclick="cameraRight();">Right</a>
+              <a href="#" class="btn btn-outline-dark disabled btn-responsive">Off</a>
+              <div class="card-text x3dCameraDescription drinksText">
+                <p>These buttons select a limited range of X3D model viewpoints, use the dropdown menu for more camera views</p>
+              </div>
+            </div>
+          </div>
+    </div>
+    <!-- Column for the animation controls -->
+    <div class="col-sm-4">
+        <div class="card text-left">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Animation</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <div class="card-Title x3dAnimationSubtitle drinksText">
+                <h3>Animation Options</h3>
+              </div>
+              <a href="#" class="btn btn-outline-light btn-responsive" onclick="spin();">RotX</a>
+              <a href="#" class="btn btn-outline-light btn-responsive">RotY</a>
+              <a href="#" class="btn btn-outline-light btn-responsive">RotZ</a>
+              <a href="#" class="btn btn-outline-dark btn-responsive" onclick="stopRotation();">Stop</a>
+              <div class="card-text x3dAnimationDescription drinksText">
+                  <p>These buttons select a range of X3D animation options</p>
+              </div>
+            </div>
+          </div>
+    </div>
+    <!-- Column for the render type and lighting controls -->
+    <div class="col-sm-4">
+        <div class="card text-left">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" >Render</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Polygon</a>
+                    <a class="dropdown-item" href="#" onclick="wireframe();">Wireframe</a>
+                    <a class="dropdown-item" href="#">Vertex</a>
+                  </div>
+                </li>
+              <!-- Dropdown nav-tab -->
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Lights</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Default</a>
+                    <a class="dropdown-item" href="#">Onmi On/Off</a>
+                    <a class="dropdown-item" href="#">Target On/Off</a>
+                    <a class="dropdown-item" href="#">Headlight On/Off</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <div class="card-Title x3dRendersubtitle drinksText">
+                <h3>Render and Lighting Options</h3>
+              </div>
+              <a href="#" class="btn btn-success btn-responsive">Poly</a>
+              <a href="#" class="btn btn-secondary btn-responsive" onclick="wireframe();">Wire</a>
+              <a href="#" class="btn btn-success btn-responsive" onclick="headlight();">Headlight</a>
+              <a href="#" class="btn btn-outline-dark btn-responsive">Default</a>
+              <div class="card-text x3dRenderDescription drinksText">
+                  <p>These buttons select a limited number of render and lighting options; use the dropdown menus for more options</p>
+              </div>
+            </div>
+          </div>
+    </div>
+</div> <!-- End the interaction panels -->
+
+        </div>
+        <div class="row">
+            <!--- coca cola-->
+            <div class="col-sm-12" >
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Coca Cola</h3>
+                        <p class="card-text">It was 1886,John Pemberton, an Atlanta pharmacist, was inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid 
+                            and, when it was done, the mixture was combined with carbonated water and sampled by customers who 
+                            all agreed - this new drink was something special.
+                        </p>
+                        <button type="button" class="btn btn-primary">Find out more</button>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+<!------- popup-->
+<div id="popup">
+  <a id="close" href="#nav_top" onclick="toggle()">X</a>
+  <h1>Send Us Message</h1>
+  <div class="isian">
+      <div class="isi">
+          <input placeholder="Full Name" type="text" name="full_name">
+      </div>
+      <div class="isi">
+          <input placeholder="Email" type="email" name="email">
+      </div>
+      <div class="isi">
+          <input placeholder="Phone Number" type="number" name="no">
+      </div>
+      <div class="isi">
+          <textarea placeholder="Your message"></textarea>
+      </div>
+  </div>
+  <br>
+  <br>
+  <a href="#nav_top" onclick="toggle()">Send</a>
+  <script type="text/javascript">
+      function toggle(){
+          var popup = document.getElementById('popup');
+          popup.classList.toggle('active');
+      }
+  </script>
+  </div>
+  
+  <!------popup-->
+   
+<!--- main content end -->
+<!-- Footer start -->
+<footer class="page-footer font-small ">
+    <!-- Footer Elements -->
+    <div class="container ">
+        <!-- Grid row-->
+        <div class="row ">
+        <!-- Grid column -->
+        <div class="col-md-12 py-2 pt-4">
+            <div class="mt-4 mb-3 text-center">
+            <!-- Facebook -->
+            <a class="fb-ic">
+                <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+                <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+                <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+                <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+                <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Pinterest-->
+            <a class="pin-ic">
+                <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+            </a>
+      </div>
+    </div>
+    <!-- Grid column -->
+  </div>
+  <!-- Grid row-->
+</div>
+<!-- Footer Elements end -->
+
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 pb-4">© 2023 Copyright:
+      <a href="/"> Igusti agung</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/48857a64cb.js" crossorigin="anonymous"></script>
+
+  </body>
+</html>
